@@ -1,0 +1,11 @@
+[workspace]
+members = [ "training", "inference"]
+resolver = "2"
+
+[workspace.dependencies]
+candle-core = { version = "0.6", features = ["cuda"] }
+candle-nn = { version = "0.6" }
+candle-datasets = { version = "0.6" }
+anyhow = { version = "1.0" }
+rand = "0.8.5"
+image = "0.25.2"

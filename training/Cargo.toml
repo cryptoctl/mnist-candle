@@ -1,0 +1,20 @@
+[package]
+name = "mnist-training"
+version = "0.1.0"
+edition = "2021"
+
+default-run = "train"
+[[bin]]
+name = "train"
+path = "src/main.rs"
+[[bin]]
+name = "inference"
+path = "src/inference.rs"
+
+[dependencies]
+candle-core = { workspace = true }
+candle-nn = { workspace = true }
+candle-datasets = { workspace = true }
+anyhow = { workspace = true }
+rand =  { workspace = true }
+image = { workspace = true }
